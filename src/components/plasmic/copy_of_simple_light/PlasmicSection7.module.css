@@ -1,0 +1,85 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  position: relative;
+  min-width: 0;
+  padding: 150px /* plasmic-token: EidwINElf6Tyi */;
+}
+.box__jwoag {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  min-width: 0;
+}
+.box__tFsll {
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 900;
+  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  position: relative;
+  height: auto;
+}
+.box__va9Oq {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 500;
+  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  line-height: 1.9;
+  position: relative;
+  height: auto;
+}
+.box__pbcI {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+}
+.box__lNvs {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.box__gxSlU {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.box__nofZu {
+  position: relative;
+}
+.box__rM5Xi {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.linkButton__b7VGc:global(.__wab_instance) {
+  position: relative;
+}
+.box__bVcLb {
+  height: auto;
+}
+.linkButton___5IhKx:global(.__wab_instance) {
+  position: relative;
+}
+.box__mr344 {
+  height: auto;
+}

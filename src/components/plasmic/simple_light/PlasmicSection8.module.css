@@ -1,0 +1,279 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  position: relative;
+  min-width: 0;
+  padding: 150px /* plasmic-token: a3Z-SSWFL */;
+  background: rgb(247, 247, 247);
+}
+.box__u42Z8 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.box__ykj6W {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box__ykj6W > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 60px);
+  width: calc(100% + 60px);
+}
+.box__ykj6W > :global(.__wab_flex-container) > *,
+.box__ykj6W > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 60px;
+}
+.link {
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 900;
+  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+}
+.svg___5Sqcb {
+  position: relative;
+  object-fit: cover;
+  height: 80px /* plasmic-token: 9_klCoQAd */;
+  width: 80px /* plasmic-token: 9_klCoQAd */;
+  flex-shrink: 0;
+}
+.box__pi7Ta {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  line-height: 1.9;
+  position: relative;
+}
+.yandexMaps:global(.__wab_instance) {
+  position: relative;
+  margin-top: 30px;
+}
+.box___82G46 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.box__qAwMd {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.box__gfJ9Q {
+  font-family: Inter;
+  font-size: 16px;
+  color: rgb(50, 52, 54) /* plasmic-token: 6-9k9VEZ- */;
+  line-height: 24px;
+  position: relative;
+  height: auto;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.box__bCpmY {
+  font-family: Inter;
+  font-size: 16px;
+  color: rgb(50, 52, 54) /* plasmic-token: 6-9k9VEZ- */;
+  line-height: 24px;
+  position: relative;
+  height: auto;
+  font-weight: 600;
+}
+.box__gq0TZ {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box__gq0TZ > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 20px);
+  width: calc(100% + 20px);
+}
+.box__gq0TZ > :global(.__wab_flex-container) > *,
+.box__gq0TZ > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 20px;
+}
+.svg__azwgQ {
+  width: 1em;
+  height: 1em;
+  min-width: 50px;
+  min-height: 50px;
+  display: block;
+  flex-direction: column;
+  flex-column-gap: 0px;
+  position: relative;
+  object-fit: cover;
+}
+.svg__mshuz {
+  width: 1em;
+  height: 1em;
+  min-width: 50px;
+  min-height: 50px;
+  display: block;
+  flex-direction: column;
+  flex-column-gap: 0px;
+  position: relative;
+  object-fit: cover;
+}
+.svg___2QRuR {
+  width: 1em;
+  height: 1em;
+  min-width: 50px;
+  min-height: 50px;
+  display: block;
+  flex-direction: column;
+  flex-column-gap: 0px;
+  position: relative;
+  object-fit: cover;
+}
+.svg___8VrEe {
+  width: 1em;
+  height: 1em;
+  min-width: 50px;
+  min-height: 50px;
+  display: block;
+  flex-direction: column;
+  flex-column-gap: 0px;
+  position: relative;
+  object-fit: cover;
+}
+.box___36RWb {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.box__qpBz5 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.box__tBb6 {
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+}
+.box__yv85W {
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+  height: auto;
+}
+.box___8LdgG {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: auto;
+}
+.box___8LdgG > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 30px);
+  width: calc(100% + 30px);
+}
+.box___8LdgG > :global(.__wab_flex-container) > *,
+.box___8LdgG > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 30px;
+}
+.box___5LCs {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box___5LCs > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.box___5LCs > :global(.__wab_flex-container) > *,
+.box___5LCs > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 10px;
+}
+.img__c2Nsn {
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  flex-shrink: 0;
+}
+.box__jaUdd {
+  position: relative;
+  height: auto;
+}
+.box__fbZp3 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box__fbZp3 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.box__fbZp3 > :global(.__wab_flex-container) > *,
+.box__fbZp3 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 10px;
+}
+.img__ld5Pi {
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  flex-shrink: 0;
+}
+.box__b9NFj {
+  position: relative;
+}
+.box__fxb5R {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box__fxb5R > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.box__fxb5R > :global(.__wab_flex-container) > *,
+.box__fxb5R > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 10px;
+}
+.img__kDkoB {
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  flex-shrink: 0;
+}
+.box__akuhP {
+  position: relative;
+  height: auto;
+}

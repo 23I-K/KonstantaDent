@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 2000 1000">
+  <defs>
+    <linearGradient id="rm84RLY6Ta" gradientUnits="userSpaceOnUse" x1="1.95" y1="-6.13" x2="2001.95" y2="993.87">
+      <stop offset="0" stop-color="#2e4f7f"/>
+      <stop offset=".69" stop-color="#91b6c5"/>
+      <stop offset="1" stop-color="#e9b8b8"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#rm84RLY6Ta)" d="M1.95-6.13h2000v1000H1.95z"/>
+</svg>

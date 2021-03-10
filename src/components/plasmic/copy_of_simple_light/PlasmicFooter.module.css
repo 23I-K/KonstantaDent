@@ -1,0 +1,176 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  position: relative;
+  min-width: 0;
+  padding: 150px /* plasmic-token: EidwINElf6Tyi */;
+  background: rgb(46, 79, 127);
+}
+.box___1UyZr {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+  border-width: 1px;
+}
+.box___70OG8 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.box__ht887 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.box__ht887 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: calc(0px - 15px);
+  height: calc(100% + 15px);
+}
+.box__ht887 > :global(.__wab_flex-container) > *,
+.box__ht887 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 15px;
+}
+.box__myACc {
+  position: relative;
+  height: auto;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+  font-weight: 600;
+}
+.box__yBnel {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box__yBnel > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 15px);
+  width: calc(100% + 15px);
+}
+.box__yBnel > :global(.__wab_flex-container) > *,
+.box__yBnel > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 15px;
+}
+.img__coFQf {
+  position: relative;
+  object-fit: cover;
+}
+.img__txa8I {
+  position: relative;
+  object-fit: cover;
+}
+.img__bcJwO {
+  position: relative;
+  object-fit: cover;
+}
+.img__cCrhb {
+  position: relative;
+  object-fit: cover;
+}
+.box__aIvz6 {
+  position: relative;
+  height: auto;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+  font-weight: 300;
+}
+.box__bgAde {
+  position: relative;
+  height: auto;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+  font-weight: 300;
+}
+.box___9Hvce {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  height: auto;
+}
+.box___2KbUt {
+  position: relative;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+}
+.box__yhZDw {
+  position: relative;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+  height: auto;
+}
+.box__q5F0Y {
+  position: relative;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+}
+.box___99PW {
+  position: relative;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+  height: auto;
+}
+.box__mi0Pt {
+  position: relative;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+  height: auto;
+}
+.box__ud0QM {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  border-width: 3px;
+}
+.box__nVp1E {
+  position: relative;
+  height: auto;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+}
+.box__ak6Ja {
+  position: relative;
+  height: auto;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+}
+.box__z10Ax {
+  position: relative;
+  height: auto;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+}
+.box___45Y6H {
+  position: relative;
+  height: auto;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+}
+.box__w0LU {
+  position: relative;
+  height: auto;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+}
+.box__jd1Md {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.img__sJiW {
+  position: relative;
+  object-fit: cover;
+}
+.box__moPlv {
+  position: relative;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+}

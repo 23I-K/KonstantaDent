@@ -1,0 +1,111 @@
+.root {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  position: relative;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.root > :global(.__wab_flex-container) {
+  margin-left: calc(0px - 20px);
+  width: calc(100% + 20px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 20px;
+}
+.root__type_solidBlue {
+  background: rgb(24, 119, 242);
+}
+.root__type_solidBlack {
+  background: rgb(24, 25, 26);
+}
+.root__type_outlineBlue {
+  border: 1px solid rgb(24, 119, 242) /* plasmic-token: p-fCTrfjtL4 */;
+}
+.root__type_small {
+  padding: 0px;
+}
+.root__type_outlineRoundedWhite {
+  max-width: 200px;
+  min-width: 200px;
+  width: auto;
+  border-radius: 135px;
+  padding: 20px 200px;
+  border: 1px solid rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+}
+.root__type_outlineRoundedWhite > :global(.__wab_flex-container) {
+  justify-content: center;
+}
+.root__type_smallLinkStyle {
+  min-width: 0px;
+  max-width: 300px;
+}
+.root__type_smallLinkStyle > :global(.__wab_flex-container) {
+  align-items: center;
+  justify-content: center;
+}
+.root:hover {
+  background: rgba(68, 192, 255, 0.2);
+}
+.root__type_solidBlue:hover {
+  background: rgb(23, 99, 207);
+}
+.root__type_solidBlack:hover {
+  background: rgb(50, 52, 54);
+}
+.box {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.box__type_outlineRoundedWhite {
+  align-items: center;
+  justify-content: center;
+}
+.slotText {
+  font-size: 20px;
+}
+.slotText__type_solidBlue {
+  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+}
+.slotText__type_solidBlack {
+  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+}
+.slotText__type_outlineBlue {
+  color: rgb(24, 119, 242) /* plasmic-token: p-fCTrfjtL4 */;
+}
+.slotText__type_small {
+  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+}
+.slotText__type_outlineRoundedWhite {
+  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  font-size: 21px;
+  font-weight: 600;
+}
+.slotText__type_smallLinkStyle {
+  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-align: center;
+}
+.slotText__type_smallLinkStyle > * {
+  text-decoration-line: underline;
+}
+.root:hover .slotText {
+  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__type_outlineRoundedWhite {
+  width: 30px;
+  height: 30px;
+  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  flex-shrink: 0;
+}
