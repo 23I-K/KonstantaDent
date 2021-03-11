@@ -16,6 +16,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import JobsItem from "../../JobsItem"; // plasmic-import: CDyDuvLezUsVf/component
+import PinkButton from "../../PinkButton"; // plasmic-import: 0e89kY6kMy/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
@@ -335,21 +336,11 @@ function PlasmicSection4__RenderFunc(props) {
           {"С полным перечнем услуг и ценами Вы можете ознакомится здесь"}
         </div>
 
-        <button
-          data-plasmic-name={"prices"}
-          data-plasmic-override={overrides.prices}
-          className={classNames(defaultcss.button, sty.prices)}
-        >
-          <div
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.box__sNFr
-            )}
-          >
-            {"Услуги и цены"}
-          </div>
-        </button>
+        <PinkButton
+          data-plasmic-name={"pinkButton"}
+          data-plasmic-override={overrides.pinkButton}
+          className={classNames("__wab_instance", sty.pinkButton)}
+        />
 
         <ToothMoneysvg2Icon
           className={classNames(defaultcss.all, sty.svg__pvgFn)}
@@ -361,8 +352,8 @@ function PlasmicSection4__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "prices"],
-  prices: ["prices"]
+  root: ["root", "pinkButton"],
+  pinkButton: ["pinkButton"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -394,7 +385,7 @@ export const PlasmicSection4 = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    prices: makeNodeComponent("prices"),
+    pinkButton: makeNodeComponent("pinkButton"),
     // Metadata about props expected for PlasmicSection4
     internalVariantProps: PlasmicSection4__VariantProps,
     internalArgProps: PlasmicSection4__ArgProps

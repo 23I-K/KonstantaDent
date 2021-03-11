@@ -50,15 +50,12 @@ function PlasmicSection8__RenderFunc(props) {
           className={classNames(defaultcss.all, sty.box__cKgDn)}
         >
           <a
-            data-plasmic-name={"link"}
-            data-plasmic-override={overrides.link}
             className={classNames(
               defaultcss.all,
               defaultcss.__wab_text,
-              sty.link
+              sty.link__l8R7E
             )}
             tabIndex={undefined}
-            name={'contacts'}
           >
             {"Контактная информация"}
           </a>
@@ -114,30 +111,57 @@ function PlasmicSection8__RenderFunc(props) {
           hasGap={true}
           className={classNames(defaultcss.all, sty.box___1QkF7)}
         >
-          <WhatsappIconsvgIcon
-            className={classNames(defaultcss.all, sty.svg__u5IJd)}
-            role={"img"}
-          />
+          <a
+            className={classNames(defaultcss.all, sty.link__wb0CQ)}
+            href={"https://wa.me/+79771054555"}
+            target={'_blank'}
+          >
+            <WhatsappIconsvgIcon
+              className={classNames(defaultcss.all, sty.svg__u5IJd)}
+              role={"img"}
+            />
+          </a>
 
-          <_132PxInstagramLogo2016SvgIcon
-            className={classNames(defaultcss.all, sty.svg__nZayM)}
-            role={"img"}
-          />
+          <a
+            className={classNames(defaultcss.all, sty.link___3CJoN)}
+            href={"https://instagram.com/konstanta.dental?igshid=1y0nxsj3yut5n"}
+            target={'_blank'}
+          >
+            <_132PxInstagramLogo2016SvgIcon
+              className={classNames(defaultcss.all, sty.svg__nZayM)}
+              role={"img"}
+            />
+          </a>
 
-          <FacebookFIconsvgIcon
-            className={classNames(defaultcss.all, sty.svg___7Tnnb)}
-            role={"img"}
-          />
+          <a
+            className={classNames(defaultcss.all, sty.link___784Rw)}
+            href={"https://www.facebook.com/konstantadental/"}
+            target={'_blank'}
+          >
+            <FacebookFIconsvgIcon
+              className={classNames(defaultcss.all, sty.svg___7Tnnb)}
+              role={"img"}
+            />
+          </a>
 
-          <TelegramLogosvgIcon
-            className={classNames(defaultcss.all, sty.svg___0Sbur)}
-            role={"img"}
-          />
+          <a
+            className={classNames(defaultcss.all, sty.link___6L8W)}
+            href={" t.me/+79771054555"}
+            target={'_blank'}
+          >
+            <TelegramLogosvgIcon
+              className={classNames(defaultcss.all, sty.svg___0Sbur)}
+              role={"img"}
+            />
+          </a>
         </p.Stack>
       </div>
 
       <div className={classNames(defaultcss.all, sty.box__lmdGv)}>
-        <div className={classNames(defaultcss.all, sty.box__jTlw6)}>
+        <a
+          className={classNames(defaultcss.all, sty.link__jTlw6)}
+          href={"tel:+79771054555"}
+        >
           <div
             className={classNames(
               defaultcss.all,
@@ -145,19 +169,9 @@ function PlasmicSection8__RenderFunc(props) {
               sty.box__ju15F
             )}
           >
-            {"8(499)-399-35-09"}
+            {"+7(977) 105 45-55"}
           </div>
-
-          <div
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.box___93Oqy
-            )}
-          >
-            {"8(977)-105-45-55"}
-          </div>
-        </div>
+        </a>
 
         <p.Stack
           as={"div"}
@@ -165,9 +179,13 @@ function PlasmicSection8__RenderFunc(props) {
           className={classNames(defaultcss.all, sty.box__qQ6Ti)}
         >
           <p.Stack
-            as={"div"}
+            as={"a"}
             hasGap={true}
-            className={classNames(defaultcss.all, sty.box__fgwa3)}
+            className={classNames(defaultcss.all, sty.link__fgwa3)}
+            href={
+              "https://yandex.ru/maps/org/konstanta_dental/207987218439/?ll=37.300564%2C55.478607&z=17.78"
+            }
+            target={'_blank'}
           >
             <img
               alt={""}
@@ -188,9 +206,13 @@ function PlasmicSection8__RenderFunc(props) {
           </p.Stack>
 
           <p.Stack
-            as={"div"}
+            as={"a"}
             hasGap={true}
-            className={classNames(defaultcss.all, sty.box__yMxro)}
+            className={classNames(defaultcss.all, sty.link__yMxro)}
+            href={
+              "https://www.google.ru/maps/place/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B0+%D0%94%D0%B5%D0%BD%D1%82%D0%B0%D0%BB/@55.478719,37.2966802,17z/data=!3m1!4b1!4m5!3m4!1s0x4135554e10754115:0x44ac441c13a462a!8m2!3d55.478716!4d37.2988689"
+            }
+            target={'_blank'}
           >
             <img
               alt={""}
@@ -211,9 +233,13 @@ function PlasmicSection8__RenderFunc(props) {
           </p.Stack>
 
           <p.Stack
-            as={"div"}
+            as={"a"}
             hasGap={true}
-            className={classNames(defaultcss.all, sty.box___0FVvD)}
+            className={classNames(defaultcss.all, sty.link___0FVvD)}
+            href={
+              "https://2gis.ru/moscow/firm/70000001007009088?m=37.299858%2C55.4788%2F18.13"
+            }
+            target={'_blank'}
           >
             <img
               alt={""}
@@ -239,8 +265,7 @@ function PlasmicSection8__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "yandexMaps"],
-  link: ["link"],
+  root: ["root", "yandexMaps"],
   yandexMaps: ["yandexMaps"]
 };
 
@@ -273,7 +298,6 @@ export const PlasmicSection8 = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    link: makeNodeComponent("link"),
     yandexMaps: makeNodeComponent("yandexMaps"),
     // Metadata about props expected for PlasmicSection8
     internalVariantProps: PlasmicSection8__VariantProps,

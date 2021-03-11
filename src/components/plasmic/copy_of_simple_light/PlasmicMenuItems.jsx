@@ -87,21 +87,21 @@ function PlasmicMenuItems__RenderFunc(props) {
         />
       </div>
 
-      <div
-        className={classNames(
-          defaultcss.all,
-          defaultcss.__wab_text,
-          sty.box__goyTg
-        )}
+      <a
+        data-plasmic-name={"link"}
+        data-plasmic-override={overrides.link}
+        className={classNames(defaultcss.all, defaultcss.__wab_text, sty.link)}
+        href={"tel:+79771054555"}
       >
-        {"+7(900)000 00-00"}
-      </div>
+        {"+7(977) 105 45-55"}
+      </a>
     </p.Stack>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "link"],
+  link: ["link"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -133,6 +133,7 @@ export const PlasmicMenuItems = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    link: makeNodeComponent("link"),
     // Metadata about props expected for PlasmicMenuItems
     internalVariantProps: PlasmicMenuItems__VariantProps,
     internalArgProps: PlasmicMenuItems__ArgProps

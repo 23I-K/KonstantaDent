@@ -39,11 +39,11 @@
           "name": "Home",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicHome.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicHome.jsx",
           "importSpec": {
             "modulePath": "Home.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicHome.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicHome.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         },
@@ -52,11 +52,11 @@
           "name": "Header",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicHeader.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicHeader.jsx",
           "importSpec": {
             "modulePath": "Header.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicHeader.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicHeader.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -65,11 +65,11 @@
           "name": "Section",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicSection.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicSection.jsx",
           "importSpec": {
             "modulePath": "Section.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicSection.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicSection.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -78,11 +78,11 @@
           "name": "FeatureCard",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicFeatureCard.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicFeatureCard.jsx",
           "importSpec": {
             "modulePath": "FeatureCard.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicFeatureCard.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicFeatureCard.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -91,11 +91,11 @@
           "name": "TopSection",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicTopSection.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicTopSection.jsx",
           "importSpec": {
             "modulePath": "TopSection.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicTopSection.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicTopSection.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -104,11 +104,11 @@
           "name": "HomeCta",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicHomeCta.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicHomeCta.jsx",
           "importSpec": {
             "modulePath": "HomeCta.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicHomeCta.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicHomeCta.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -117,11 +117,11 @@
           "name": "IconLink",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicIconLink.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicIconLink.jsx",
           "importSpec": {
             "modulePath": "IconLink.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicIconLink.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicIconLink.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -130,11 +130,11 @@
           "name": "LinkButton",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicLinkButton.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicLinkButton.jsx",
           "importSpec": {
             "modulePath": "LinkButton.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicLinkButton.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicLinkButton.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -143,11 +143,11 @@
           "name": "Testimonial",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicTestimonial.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicTestimonial.jsx",
           "importSpec": {
             "modulePath": "Testimonial.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicTestimonial.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicTestimonial.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -156,11 +156,11 @@
           "name": "Avatar",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicAvatar.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicAvatar.jsx",
           "importSpec": {
             "modulePath": "Avatar.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicAvatar.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicAvatar.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -169,11 +169,11 @@
           "name": "Pricing",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicPricing.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicPricing.jsx",
           "importSpec": {
             "modulePath": "Pricing.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicPricing.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicPricing.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         },
@@ -182,11 +182,11 @@
           "name": "BaseCard",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicBaseCard.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicBaseCard.jsx",
           "importSpec": {
             "modulePath": "BaseCard.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicBaseCard.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicBaseCard.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -195,11 +195,11 @@
           "name": "Plan",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicPlan.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicPlan.jsx",
           "importSpec": {
             "modulePath": "Plan.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicPlan.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicPlan.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -208,11 +208,11 @@
           "name": "Bullet",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicBullet.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicBullet.jsx",
           "importSpec": {
             "modulePath": "Bullet.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicBullet.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicBullet.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -221,11 +221,11 @@
           "name": "Faq",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicFaq.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicFaq.jsx",
           "importSpec": {
             "modulePath": "Faq.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicFaq.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicFaq.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -234,11 +234,11 @@
           "name": "Features",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicFeatures.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicFeatures.jsx",
           "importSpec": {
             "modulePath": "Features.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicFeatures.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicFeatures.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         },
@@ -247,11 +247,11 @@
           "name": "MenuItems",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicMenuItems.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicMenuItems.jsx",
           "importSpec": {
             "modulePath": "MenuItems.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicMenuItems.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicMenuItems.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -260,11 +260,11 @@
           "name": "PhotoGallery",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicPhotoGallery.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicPhotoGallery.jsx",
           "importSpec": {
             "modulePath": "PhotoGallery.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicPhotoGallery.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicPhotoGallery.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -273,11 +273,11 @@
           "name": "Slider1",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicSlider1.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicSlider1.jsx",
           "importSpec": {
             "modulePath": "Slider1.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicSlider1.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicSlider1.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -286,11 +286,11 @@
           "name": "Section2",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicSection2.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicSection2.jsx",
           "importSpec": {
             "modulePath": "Section2.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicSection2.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicSection2.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -299,11 +299,11 @@
           "name": "Section3",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicSection3.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicSection3.jsx",
           "importSpec": {
             "modulePath": "Section3.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicSection3.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicSection3.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -312,11 +312,11 @@
           "name": "JobsItem",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicJobsItem.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicJobsItem.jsx",
           "importSpec": {
             "modulePath": "JobsItem.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicJobsItem.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicJobsItem.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -325,11 +325,11 @@
           "name": "Section4",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicSection4.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicSection4.jsx",
           "importSpec": {
             "modulePath": "Section4.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicSection4.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicSection4.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -338,11 +338,11 @@
           "name": "Section5",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicSection5.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicSection5.jsx",
           "importSpec": {
             "modulePath": "Section5.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicSection5.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicSection5.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -351,11 +351,11 @@
           "name": "Section6",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicSection6.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicSection6.jsx",
           "importSpec": {
             "modulePath": "Section6.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicSection6.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicSection6.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -364,11 +364,11 @@
           "name": "Section7",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicSection7.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicSection7.jsx",
           "importSpec": {
             "modulePath": "Section7.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicSection7.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicSection7.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -377,11 +377,11 @@
           "name": "Section8",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicSection8.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicSection8.jsx",
           "importSpec": {
             "modulePath": "Section8.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicSection8.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicSection8.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -390,11 +390,11 @@
           "name": "Footer",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicFooter.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicFooter.jsx",
           "importSpec": {
             "modulePath": "Footer.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicFooter.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicFooter.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -403,11 +403,11 @@
           "name": "YandexMaps",
           "type": "managed",
           "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-          "renderModuleFilePath": "plasmic/simple_light/PlasmicYandexMaps.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicYandexMaps.jsx",
           "importSpec": {
             "modulePath": "YandexMaps.jsx"
           },
-          "cssFilePath": "plasmic/simple_light/PlasmicYandexMaps.module.css",
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicYandexMaps.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
@@ -416,262 +416,262 @@
         {
           "id": "5rPALgzyRHAxZ",
           "name": "TwitterIconIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__TwitterIcon.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__TwitterIcon.jsx"
         },
         {
           "id": "Wof83zVootXTo",
           "name": "GithubIconIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__GithubIcon.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__GithubIcon.jsx"
         },
         {
           "id": "elN7sP2UIFJ4d",
           "name": "FacebookIconIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__FacebookIcon.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__FacebookIcon.jsx"
         },
         {
           "id": "xIWWucYrPhBON",
           "name": "FacebookLogoIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__FacebookLogo.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__FacebookLogo.jsx"
         },
         {
           "id": "KnDiQq88yT3Up",
           "name": "LogoIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Logo.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Logo.jsx"
         },
         {
           "id": "Ajh7QXHC3-YEg",
           "name": "SphereIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Sphere.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Sphere.jsx"
         },
         {
           "id": "Hbs-kzMsG0Rkj",
           "name": "QuoteDashesIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__QuoteDashes.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__QuoteDashes.jsx"
         },
         {
           "id": "AEslQjnoLlCEz",
           "name": "TinderLogoIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__TinderLogo.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__TinderLogo.jsx"
         },
         {
           "id": "NJp216qrmvRsB",
           "name": "AirbnbLogoIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__AirbnbLogo.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__AirbnbLogo.jsx"
         },
         {
           "id": "NAImNPPwKDiZM",
           "name": "HubspotLogoIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__HubspotLogo.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__HubspotLogo.jsx"
         },
         {
           "id": "3FwOIAErwLfa1",
           "name": "AmazonLogoIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__AmazonLogo.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__AmazonLogo.jsx"
         },
         {
           "id": "eCEGTFV83O2NT",
           "name": "SwapIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Swap.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Swap.jsx"
         },
         {
           "id": "JvuTFkDGX_XS1",
           "name": "SlotIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Slot.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Slot.jsx"
         },
         {
           "id": "ZOPzyXsoQvWEr",
           "name": "CycleIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Cycle.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Cycle.jsx"
         },
         {
           "id": "yl545-5pNw3FC",
           "name": "HammerIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Hammer.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Hammer.jsx"
         },
         {
           "id": "ZpVu-En3HCfow",
           "name": "PencilIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Pencil.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Pencil.jsx"
         },
         {
           "id": "AlFEJWEuBHY9k",
           "name": "LightningIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Lightning.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Lightning.jsx"
         },
         {
           "id": "uYqR2RtxfkUZl",
           "name": "RightArrowIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__RightArrow.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__RightArrow.jsx"
         },
         {
           "id": "J8Iope9ZS6Zya",
           "name": "Done24Pxsvg2Icon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Done24Pxsvg2.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Done24Pxsvg2.jsx"
         },
         {
           "id": "H4Ft4b9Vix",
           "name": "KonstantaDental1WhitesvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__KonstantaDental1Whitesvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__KonstantaDental1Whitesvg.jsx"
         },
         {
           "id": "ELlmvJERct",
           "name": "Aestetic1SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Aestetic1Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Aestetic1Svg.jsx"
         },
         {
           "id": "ST7O1kmVRT",
           "name": "Aestetic2SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Aestetic2Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Aestetic2Svg.jsx"
         },
         {
           "id": "YV63tnDU76",
           "name": "Aestetic3SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Aestetic3Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Aestetic3Svg.jsx"
         },
         {
           "id": "AUONeN7Q-1",
           "name": "Aestetic4SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Aestetic4Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Aestetic4Svg.jsx"
         },
         {
           "id": "d53dY43qIG",
           "name": "Aestetic5SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Aestetic5Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Aestetic5Svg.jsx"
         },
         {
           "id": "pDf97a3A5R",
           "name": "Aestetic6SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Aestetic6Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Aestetic6Svg.jsx"
         },
         {
           "id": "fA1NfzzTaN",
           "name": "_132PxInstagramLogo2016SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon___132PxInstagramLogo2016Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon___132PxInstagramLogo2016Svg.jsx"
         },
         {
           "id": "b6flz5NzWd",
           "name": "FacebookFIconsvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__FacebookFIconsvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__FacebookFIconsvg.jsx"
         },
         {
           "id": "_jnN_Vm8gz",
           "name": "WhatsappIconsvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__WhatsappIconsvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__WhatsappIconsvg.jsx"
         },
         {
           "id": "NUeYhRydXf",
           "name": "TelegramLogosvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__TelegramLogosvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__TelegramLogosvg.jsx"
         },
         {
           "id": "2GRi3ydkEi",
           "name": "PlaceholdersvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Placeholdersvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Placeholdersvg.jsx"
         },
         {
           "id": "9ovdEH2X9U",
           "name": "TeethBlacksvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__TeethBlacksvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__TeethBlacksvg.jsx"
         },
         {
           "id": "khWLi80jHa",
           "name": "ToothWhiteningBlacksvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__ToothWhiteningBlacksvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__ToothWhiteningBlacksvg.jsx"
         },
         {
           "id": "7-IuXx2F3T",
           "name": "StarsFiledBlacksvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__StarsFiledBlacksvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__StarsFiledBlacksvg.jsx"
         },
         {
           "id": "vpNuNhTOSj",
           "name": "Tooth4Greysvg2Icon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Tooth4Greysvg2.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Tooth4Greysvg2.jsx"
         },
         {
           "id": "GCsBs8QiTB",
           "name": "AesteticsvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Aesteticsvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Aesteticsvg.jsx"
         },
         {
           "id": "b_0lp8T_9",
           "name": "ChildsvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Childsvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Childsvg.jsx"
         },
         {
           "id": "XCxVFtLk-K",
           "name": "ImplantsvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Implantsvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Implantsvg.jsx"
         },
         {
           "id": "ABviE8cU4J",
           "name": "OrtodontsvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Ortodontsvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Ortodontsvg.jsx"
         },
         {
           "id": "8TsnJpby6",
           "name": "CleansvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Cleansvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Cleansvg.jsx"
         },
         {
           "id": "4kqX1tT-Nw",
           "name": "ProtezirovaniesvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Protezirovaniesvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Protezirovaniesvg.jsx"
         },
         {
           "id": "_uvtO_GFXt",
           "name": "Aestetic2Svg2Icon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Aestetic2Svg2.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Aestetic2Svg2.jsx"
         },
         {
           "id": "K_b5e0JY1L",
           "name": "Child2SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Child2Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Child2Svg.jsx"
         },
         {
           "id": "gyYZ3zgYYg",
           "name": "Implant2SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Implant2Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Implant2Svg.jsx"
         },
         {
           "id": "bzJiXADxFO",
           "name": "Clean2SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Clean2Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Clean2Svg.jsx"
         },
         {
           "id": "6UKqezNH6J",
           "name": "Ortodont2SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Ortodont2Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Ortodont2Svg.jsx"
         },
         {
           "id": "6Bvpon50IM",
           "name": "Protezirovanie2SvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__Protezirovanie2Svg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__Protezirovanie2Svg.jsx"
         },
         {
           "id": "z3TzHvO6fp",
           "name": "ToothMoneysvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__ToothMoneysvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__ToothMoneysvg.jsx"
         },
         {
           "id": "GA4jYd1Tst",
           "name": "ToothMoneysvg2Icon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__ToothMoneysvg2.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__ToothMoneysvg2.jsx"
         },
         {
           "id": "L2ax5rhXMz",
           "name": "BrightStarssvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__BrightStarssvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__BrightStarssvg.jsx"
         },
         {
           "id": "X7oHkErDC8",
           "name": "ShiningBlacksvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__ShiningBlacksvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__ShiningBlacksvg.jsx"
         },
         {
           "id": "iDiGi9eopN",
           "name": "PlayButtonsvgIcon",
-          "moduleFilePath": "plasmic/simple_light/icons/PlasmicIcon__PlayButtonsvg.jsx"
+          "moduleFilePath": "plasmic/copy_of_simple_light/icons/PlasmicIcon__PlayButtonsvg.jsx"
         }
       ],
       "images": [
@@ -1218,6 +1218,19 @@
           "cssFilePath": "plasmic/copy_of_simple_light/PlasmicLinkButton2.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "0e89kY6kMy",
+          "name": "PinkButton",
+          "type": "managed",
+          "projectId": "rRiHBMbiCNZ6Mp9qsJpkyN",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicPinkButton.jsx",
+          "importSpec": {
+            "modulePath": "PinkButton.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicPinkButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1627,6 +1640,11 @@
           "id": "n9o4vaOa4TFOk",
           "name": "play-button.png",
           "filePath": "plasmic/copy_of_simple_light/images/playButtonpng.png"
+        },
+        {
+          "id": "gJ-GPUTBh",
+          "name": "image",
+          "filePath": "plasmic/copy_of_simple_light/images/image.png"
         }
       ],
       "jsBundleThemes": []
@@ -1638,7 +1656,7 @@
         "id": "j0pD0TqEwUAIP",
         "name": "Screen",
         "projectId": "bGhfLbpuPrsnLdpUo1t3d",
-        "contextFilePath": "plasmic/simple_light/PlasmicGlobalVariant__Screen.jsx"
+        "contextFilePath": "plasmic/copy_of_simple_light/PlasmicGlobalVariant__Screen.jsx"
       },
       {
         "id": "ds0rkJllqclQf",

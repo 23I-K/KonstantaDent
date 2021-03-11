@@ -58,9 +58,10 @@
 .linkButton__fBkn:global(.__wab_instance) {
   position: relative;
 }
-.box__goyTg {
+.link {
   position: relative;
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
   font-weight: 800;
   font-size: 22px;
+  height: auto;
 }

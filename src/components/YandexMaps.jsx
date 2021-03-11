@@ -4,21 +4,11 @@ import * as React from "react";
 import { PlasmicYandexMaps } from "./plasmic/copy_of_simple_light/PlasmicYandexMaps";
 
 function YandexMaps(props) {
-  // Use PlasmicYandexMaps to render this component as it was
-  // designed in Plasmic, by activating the appropriate variants,
-  // attaching the appropriate event handlers, etc.  You
-  // can also install whatever React hooks you need here to manage state or
-  // fetch data.
-  //
-  // Props you can pass into PlasmicYandexMaps are:
-  // 1. Variants you want to activate,
-  // 2. Contents for slots you want to fill,
-  // 3. Overrides for any named node in the component to attach behavior and data,
-  // 4. Props to set on the root node.
-  //
-  // By default, we are just piping all YandexMapsProps here, but feel free
-  // to do whatever works for you.
-  return <PlasmicYandexMaps {...props} />;
+  return (
+      <div className={props.className}>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae460a12e15a8ff18e10d14c14231fe68c7ec77a980910394c65217cd144167b8&amp;source=constructor" width="100%" height="450" frameBorder="0"/>
+      </div>
+  );
 }
 
 export default YandexMaps;

@@ -46,15 +46,16 @@ function PlasmicFooter__RenderFunc(props) {
             hasGap={true}
             className={classNames(defaultcss.all, sty.box__ht887)}
           >
-            <div
+            <a
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
-                sty.box__myACc
+                sty.link__myACc
               )}
+              href={"tel:+79771054555"}
             >
-              {"+(900) 000 00-00"}
-            </div>
+              {"+7(977) 105 45-55"}
+            </a>
 
             <p.Stack
               as={"div"}
@@ -90,15 +91,16 @@ function PlasmicFooter__RenderFunc(props) {
               />
             </p.Stack>
 
-            <div
+            <a
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
-                sty.box__aIvz6
+                sty.link__aIvz6
               )}
+              href={"mailto:konstantadental@gmail.com"}
             >
               {"konstantadental@gmail.com"}
-            </div>
+            </a>
 
             <div
               className={classNames(
@@ -113,15 +115,16 @@ function PlasmicFooter__RenderFunc(props) {
         </div>
 
         <div className={classNames(defaultcss.all, sty.box___9Hvce)}>
-          <div
+          <a
             className={classNames(
               defaultcss.all,
               defaultcss.__wab_text,
-              sty.box___2KbUt
+              sty.link___2KbUt
             )}
+            href={"/"}
           >
             {"Главная"}
-          </div>
+          </a>
 
           <div
             className={classNames(
@@ -218,12 +221,14 @@ function PlasmicFooter__RenderFunc(props) {
       </div>
 
       <div className={classNames(defaultcss.all, sty.box__jd1Md)}>
-        <img
-          alt={""}
-          className={classNames(defaultcss.img, sty.img__sJiW)}
-          role={"img"}
-          src={konstantaDental2PngZA7JmbMxjRaDe}
-        />
+        <a className={classNames(defaultcss.all, sty.link__mNPh)} href={"/"}>
+          <img
+            alt={""}
+            className={classNames(defaultcss.img, sty.img__sJiW)}
+            role={"img"}
+            src={konstantaDental2PngZA7JmbMxjRaDe}
+          />
+        </a>
 
         <div
           className={classNames(

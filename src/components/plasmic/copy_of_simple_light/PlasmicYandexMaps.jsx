@@ -18,6 +18,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
 import * as sty from "./PlasmicYandexMaps.module.css"; // plasmic-import: lV8cBegov1BaA/css
+import imageGJGputBh from "./images/image.png"; // plasmic-import: gJ-GPUTBh/picture
 
 export const PlasmicYandexMaps__VariantProps = new Array();
 
@@ -33,20 +34,21 @@ function PlasmicYandexMaps__RenderFunc(props) {
       data-plasmic-for-node={forNode}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
-      <div
-        data-plasmic-name={"box"}
-        data-plasmic-override={overrides.box}
-        className={classNames(defaultcss.all, sty.box)}
-      >
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae460a12e15a8ff18e10d14c14231fe68c7ec77a980910394c65217cd144167b8&amp;source=constructor" width="100%" height="450" frameBorder="0"/>
-      </div>
+      <img
+        data-plasmic-name={"img"}
+        data-plasmic-override={overrides.img}
+        alt={""}
+        className={classNames(defaultcss.img, sty.img)}
+        role={"img"}
+        src={imageGJGputBh}
+      />
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "box"],
-  box: ["box"]
+  root: ["root", "img"],
+  img: ["img"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -78,7 +80,7 @@ export const PlasmicYandexMaps = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    box: makeNodeComponent("box"),
+    img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicYandexMaps
     internalVariantProps: PlasmicYandexMaps__VariantProps,
     internalArgProps: PlasmicYandexMaps__ArgProps

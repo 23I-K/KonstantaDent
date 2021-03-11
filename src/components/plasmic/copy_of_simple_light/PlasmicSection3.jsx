@@ -84,7 +84,7 @@ function PlasmicSection3__RenderFunc(props) {
                 sty.box__aBc7M
               )}
             >
-              {"Только новейшее и уникальное оборудование"}
+                Только новейшее и <span style={{color: 'rgb(233, 184, 184)'}}>уникальное</span> оборудование
             </div>
 
             <StarsFiledBlacksvgIcon

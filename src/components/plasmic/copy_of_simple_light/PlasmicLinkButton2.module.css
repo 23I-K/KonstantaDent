@@ -3,6 +3,9 @@
   width: auto;
   height: auto;
   position: relative;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
   border-radius: 5px;
   padding: 10px 20px;
 }
@@ -30,9 +33,10 @@
   max-width: 200px;
   min-width: 200px;
   width: auto;
+  display: inline-flex;
   border-radius: 135px;
   padding: 20px 200px;
-  border: 1px solid rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  border: 1px solid rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
 }
 .root__type_outlineRoundedWhite > :global(.__wab_flex-container) {
   justify-content: center;
@@ -46,7 +50,7 @@
   justify-content: center;
 }
 .root:hover {
-  background: rgba(68, 192, 255, 0.2);
+  background: rgba(68, 192, 255, 0.44);
 }
 .root__type_solidBlue:hover {
   background: rgb(23, 99, 207);
@@ -64,29 +68,39 @@
 .box__type_outlineRoundedWhite {
   align-items: center;
   justify-content: center;
+  width: auto;
+  display: inline-flex;
+}
+.root:hover .box {
+  cursor: pointer;
 }
 .slotText {
   font-size: 20px;
 }
+.slotText > * {
+  transition-property: all;
+  transition-duration: 0.3s;
+}
 .slotText__type_solidBlue {
-  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
 }
 .slotText__type_solidBlack {
-  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
 }
 .slotText__type_outlineBlue {
   color: rgb(24, 119, 242) /* plasmic-token: p-fCTrfjtL4 */;
 }
 .slotText__type_small {
-  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
 }
 .slotText__type_outlineRoundedWhite {
-  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
   font-size: 21px;
   font-weight: 600;
+  white-space: pre;
 }
 .slotText__type_smallLinkStyle {
-  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
   font-weight: 500;
   letter-spacing: normal;
   text-align: center;
@@ -95,7 +109,7 @@
   text-decoration-line: underline;
 }
 .root:hover .slotText {
-  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
 }
 .svg {
   position: relative;
@@ -106,6 +120,6 @@
 .svg__type_outlineRoundedWhite {
   width: 30px;
   height: 30px;
-  color: rgb(255, 255, 255) /* plasmic-token: zUBnHHqvWC_cd */;
+  color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
   flex-shrink: 0;
 }

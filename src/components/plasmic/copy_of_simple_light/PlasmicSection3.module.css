@@ -7,7 +7,8 @@
   height: auto;
   position: relative;
   min-width: 0;
-  padding: 150px /* plasmic-token: EidwINElf6Tyi */;
+  padding: 100px 150px /* plasmic-token: EidwINElf6Tyi */ 150px
+    /* plasmic-token: EidwINElf6Tyi */;
   background: rgb(247, 247, 247);
 }
 .root__reverseView {
@@ -29,6 +30,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 60px;
 }
 .box__aBc7M {
   font-family: Inter;
@@ -58,7 +60,8 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  padding-top: 197px;
+  padding-top: 200px;
+  height: auto;
 }
 .box___0GHcx > :global(.__wab_flex-container) {
   flex-direction: row;
