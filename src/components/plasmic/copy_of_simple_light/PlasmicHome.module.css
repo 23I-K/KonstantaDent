@@ -32,9 +32,26 @@
   top: 0px;
   z-index: 1;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .header:global(.__wab_instance) {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+}
 .topSection:global(.__wab_instance) {
   position: relative;
   width: 100%;
+}
+@media (max-width: 1710px) {
+  .topSection:global(.__wab_instance) {
+    height: auto;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .topSection:global(.__wab_instance) {
+    height: auto;
+  }
 }
 .section:global(.__wab_instance) {
   position: relative;
@@ -42,32 +59,25 @@
 .box___75NLw {
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
 }
-.box__tKhXa {
-  height: auto;
-  font-size: 38px;
+.box__y7S {
+  font-size: 53px;
   font-weight: 700;
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
 }
-.box__awkF {
-  font-size: 22px;
-  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+@media (max-width: 1710px) {
+  .box__y7S {
+    font-size: 42px;
+  }
 }
-.img {
-  position: absolute;
-  object-fit: cover;
-  left: auto;
-  top: 32px;
-  right: 647px;
-  bottom: auto;
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__y7S {
+    font-size: 24px;
+    color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  }
 }
 .photoGallery:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .photoGallery:global(.__wab_instance) {
-    flex-shrink: 0;
-  }
 }
 .section2:global(.__wab_instance) {
   position: relative;
@@ -75,14 +85,54 @@
 .section3__eoasy:global(.__wab_instance) {
   position: relative;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .section3__eoasy:global(.__wab_instance) {
+    height: auto;
+  }
+}
+.img__ix4Az {
+  position: relative;
+  object-fit: cover;
+}
+@media (max-width: 1710px) {
+  .img__ix4Az {
+    width: 420px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__ix4Az {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (max-width: 1710px) {
+  .box__nl50Y {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1710px) {
+  .box__fbRiD {
+    font-size: 16px;
+  }
+}
 .section3__bjqeG:global(.__wab_instance) {
   position: relative;
 }
 .section3__oeLrq:global(.__wab_instance) {
   position: relative;
 }
+.img__cpz0A {
+  position: relative;
+  object-fit: cover;
+  width: 40%;
+}
 .box__z2Ooh {
   margin-bottom: 30px;
+}
+@media (max-width: 1710px) {
+  .box__z2Ooh {
+    font-size: 29px;
+  }
 }
 .section4:global(.__wab_instance) {
   position: relative;

@@ -1,0 +1,55 @@
+.root {
+  position: relative;
+  height: 40px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+@media (max-width: 1710px) {
+  .root {
+    border-radius: 50%;
+  }
+}
+.root__leftArrow {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 0px;
+  background: url("./images/leftArrowpng.png") 0% 0% / cover;
+}
+@media (max-width: 1710px) {
+  .root__leftArrow {
+    box-shadow: none;
+    border-radius: 50%;
+  }
+}
+.root__rightArrow {
+  width: 40px;
+  background: url("./images/rightArrowpng.png") 0% 0% / 100% 100%;
+}
+@media (max-width: 1710px) {
+  .root__rightArrow {
+    cursor: pointer;
+  }
+}
+@media (max-width: 1710px) {
+  .root__rightArrow_leftArrow {
+    border: 1px none rgba(255, 255, 255, 0) /* plasmic-token: aZB55lECH */;
+  }
+}
+.root:focus {
+  outline: none;
+}
+.root__rightArrow:focus {
+  outline: none;
+}
+.root__rightArrow_leftArrow:hover {
+  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.38);
+}
+.root__rightArrow_leftArrow:active {
+  border-style: none;
+}
+.root__rightArrow_leftArrow:focus {
+  outline: none;
+  border-style: none;
+}

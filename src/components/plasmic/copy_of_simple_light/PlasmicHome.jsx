@@ -10,9 +10,11 @@
 // Component: 9Pt8GATgG36j
 import * as React from "react";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: uS4ZVUpSFN1i/component
 import TopSection from "../../TopSection"; // plasmic-import: T29IqgzAKopj/component
@@ -25,11 +27,13 @@ import Section5 from "../../Section5"; // plasmic-import: tzq71K8qtXHOj/componen
 import Section6 from "../../Section6"; // plasmic-import: -3OMKxRuXnwbo/component
 import Section8 from "../../Section8"; // plasmic-import: qe2_ntIZdwjxj/component
 import Footer from "../../Footer"; // plasmic-import: mwKnfShdBNNjS/component
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
 import * as sty from "./PlasmicHome.module.css"; // plasmic-import: 9Pt8GATgG36j/css
-import shiningBlackpngK2EelegbbUHdg from "./images/shiningBlackpng.png"; // plasmic-import: k2EelegbbUHdg/picture
+import equipment1PngJyMe45Dtw75J9 from "./images/equipment1Png.png"; // plasmic-import: jyME45dtw75J9/picture
+import equipmentpngR3TlfYzFc from "./images/equipmentpng.png"; // plasmic-import: R3TLFYzFc/picture
 
 export const PlasmicHome__VariantProps = new Array();
 
@@ -37,6 +41,10 @@ export const PlasmicHome__ArgProps = new Array();
 
 function PlasmicHome__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
+
   return (
     <React.Fragment>
       <div className={defaultcss.plasmic_page_wrapper}>
@@ -68,39 +76,19 @@ function PlasmicHome__RenderFunc(props) {
               data-plasmic-name={"section"}
               data-plasmic-override={overrides.section}
               className={classNames("__wab_instance", sty.section)}
-              subtitle={
-                <React.Fragment>
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.box__awkF
-                    )}
-                  >
-                    {
-                      "Я приветствую Вас в моей клинике Константа Дентал. Кратко расскажу Вам о нас."
-                    }
-                  </div>
-
-                  <img
-                    data-plasmic-name={"img"}
-                    data-plasmic-override={overrides.img}
-                    alt={""}
-                    className={classNames(defaultcss.img, sty.img)}
-                    role={"img"}
-                    src={shiningBlackpngK2EelegbbUHdg}
-                  />
-                </React.Fragment>
-              }
               subtitleMain={
                 <div
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.box__tKhXa
+                    sty.box__y7S
                   )}
                 >
-                  {"Гуманенко Татьяна Владимировна"}
+                  {hasVariant(globalVariants, "screen", "mobile")
+                    ? "Гуманенко Татьяна Владимировна"
+                    : hasVariant(globalVariants, "screen", "smallDesktop")
+                    ? "Гуманенко Татьяна Владимировна"
+                    : "Гуманенко Татьяна Владимировна"}
                 </div>
               }
               title={
@@ -130,35 +118,84 @@ function PlasmicHome__RenderFunc(props) {
 
             <Section3
               className={classNames("__wab_instance", sty.section3__eoasy)}
-            />
-
-            <Section3
-              className={classNames("__wab_instance", sty.section3__bjqeG)}
-              mainTitle={"CEREC"}
-              reverseView={"reverseView"}
-              subTitle={
-                "Новейший аппарат для быстрого и качественного восстановления и реставрации зубов, который используют в лучших клиниках по всему миру"
-              }
-            />
-
-            <Section3
-              className={classNames("__wab_instance", sty.section3__oeLrq)}
               mainTitle={
                 <div
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.box__z2Ooh
+                    sty.box__nl50Y
                   )}
                 >
-                  {"Многофункциональные\nи новые стоматологические\nустановки"}
+                  {"3D Ортопантомограф "}
                 </div>
               }
-              simpleView={"simpleView"}
               subTitle={
-                "Многофункциональные и новые стоматологические установки"
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.box__fbRiD
+                  )}
+                >
+                  {
+                    "Lиагностический аппарат, благодаря которому наши врачи безболезненно проводят полное исследование челюстной зоны"
+                  }
+                </div>
+              }
+              techImage={
+                <img
+                  alt={""}
+                  className={classNames(defaultcss.img, sty.img__ix4Az)}
+                  role={"img"}
+                  src={equipment1PngJyMe45Dtw75J9}
+                />
               }
             />
+
+            {(hasVariant(globalVariants, "screen", "mobile") ? false : true) ? (
+              <Section3
+                className={classNames("__wab_instance", sty.section3__bjqeG)}
+                mainTitle={"CEREC"}
+                reverseView={"reverseView"}
+                subTitle={
+                  "Новейший аппарат для быстрого и качественного восстановления и реставрации зубов, который используют в лучших клиниках по всему миру"
+                }
+              />
+            ) : null}
+            {(hasVariant(globalVariants, "screen", "mobile") ? false : true) ? (
+              <Section3
+                className={classNames("__wab_instance", sty.section3__oeLrq)}
+                mainTitle={
+                  <div
+                    className={classNames(
+                      defaultcss.all,
+                      defaultcss.__wab_text,
+                      sty.box__z2Ooh
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "smallDesktop")
+                      ? "Многофункциональные и новые стоматологические установки"
+                      : "Многофункциональные\nи новые стоматологические\nустановки"}
+                  </div>
+                }
+                simpleView={"simpleView"}
+                subTitle={
+                  "Многофункциональные и новые стоматологические установки"
+                }
+                techImage={
+                  <img
+                    alt={""}
+                    className={classNames(defaultcss.img, sty.img__cpz0A)}
+                    role={"img"}
+                    src={
+                      hasVariant(globalVariants, "screen", "smallDesktop")
+                        ? equipment1PngJyMe45Dtw75J9
+                        : equipmentpngR3TlfYzFc
+                    }
+                  />
+                }
+              />
+            ) : null}
 
             <Section4
               data-plasmic-name={"section4"}
@@ -202,7 +239,6 @@ const PlasmicDescendants = {
     "header",
     "topSection",
     "section",
-    "img",
     "photoGallery",
     "section2",
     "section4",
@@ -214,8 +250,7 @@ const PlasmicDescendants = {
 
   header: ["header"],
   topSection: ["topSection"],
-  section: ["section", "img"],
-  img: ["img"],
+  section: ["section"],
   photoGallery: ["photoGallery"],
   section2: ["section2"],
   section4: ["section4"],
@@ -257,7 +292,6 @@ export const PlasmicHome = Object.assign(
     header: makeNodeComponent("header"),
     topSection: makeNodeComponent("topSection"),
     section: makeNodeComponent("section"),
-    img: makeNodeComponent("img"),
     photoGallery: makeNodeComponent("photoGallery"),
     section2: makeNodeComponent("section2"),
     section4: makeNodeComponent("section4"),

@@ -11,10 +11,14 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import CircleButton from "../../CircleButton"; // plasmic-import: Y6P8eBMoeV/component
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
@@ -30,6 +34,10 @@ export const PlasmicSection2__ArgProps = new Array();
 
 function PlasmicSection2__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -87,54 +95,106 @@ function PlasmicSection2__RenderFunc(props) {
           src={_2DoctorpngXvk8NXcrNqgDi}
         />
 
-        <img
-          alt={""}
-          className={classNames(defaultcss.img, sty.img__qbIeP)}
-          role={"img"}
-          src={_1DoctorpngM3NHmsc5P4Y7}
-        />
-
-        <img
-          alt={""}
-          className={classNames(defaultcss.img, sty.img___8TIa)}
-          role={"img"}
-          src={_3DoctorpngUqnnx4VtCz4N}
-        />
-
-        <img
-          alt={""}
-          className={classNames(defaultcss.img, sty.img__zTgLc)}
-          role={"img"}
-          src={_2DoctorpngXvk8NXcrNqgDi}
-        />
+        {(hasVariant(globalVariants, "screen", "mobile") ? false : true) ? (
+          <img
+            alt={""}
+            className={classNames(defaultcss.img, sty.img__qbIeP)}
+            role={"img"}
+            src={_1DoctorpngM3NHmsc5P4Y7}
+          />
+        ) : null}
+        {(
+          hasVariant(globalVariants, "screen", "smallDesktop") ? false : true
+        ) ? (
+          <img
+            alt={""}
+            className={classNames(defaultcss.img, sty.img___8TIa)}
+            role={"img"}
+            src={_3DoctorpngUqnnx4VtCz4N}
+          />
+        ) : null}
+        {(
+          hasVariant(globalVariants, "screen", "mobile")
+            ? false
+            : hasVariant(globalVariants, "screen", "smallDesktop")
+            ? false
+            : true
+        ) ? (
+          <img
+            alt={""}
+            className={classNames(defaultcss.img, sty.img__zTgLc)}
+            role={"img"}
+            src={_2DoctorpngXvk8NXcrNqgDi}
+          />
+        ) : null}
       </p.Stack>
 
-      <p.Stack
-        as={"div"}
-        hasGap={true}
-        className={classNames(defaultcss.all, sty.box__dAdxQ)}
-      >
-        <img
-          alt={""}
-          className={classNames(defaultcss.img, sty.img__g5P2A)}
-          role={"img"}
-          src={_1DoctorpngM3NHmsc5P4Y7}
-        />
+      {(
+        hasVariant(globalVariants, "screen", "mobile")
+          ? false
+          : hasVariant(globalVariants, "screen", "smallDesktop")
+          ? false
+          : true
+      ) ? (
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(defaultcss.all, sty.box__dAdxQ)}
+        >
+          <img
+            alt={""}
+            className={classNames(defaultcss.img, sty.img__g5P2A)}
+            role={"img"}
+            src={_1DoctorpngM3NHmsc5P4Y7}
+          />
 
-        <img
-          alt={""}
-          className={classNames(defaultcss.img, sty.img__jdCho)}
-          role={"img"}
-          src={_3DoctorpngUqnnx4VtCz4N}
-        />
+          <img
+            alt={""}
+            className={classNames(defaultcss.img, sty.img__jdCho)}
+            role={"img"}
+            src={_3DoctorpngUqnnx4VtCz4N}
+          />
 
-        <img
-          alt={""}
-          className={classNames(defaultcss.img, sty.img__zYa7I)}
-          role={"img"}
-          src={_2DoctorpngXvk8NXcrNqgDi}
-        />
-      </p.Stack>
+          <img
+            alt={""}
+            className={classNames(defaultcss.img, sty.img__zYa7I)}
+            role={"img"}
+            src={_2DoctorpngXvk8NXcrNqgDi}
+          />
+        </p.Stack>
+      ) : null}
+      {(
+        hasVariant(globalVariants, "screen", "mobile")
+          ? false
+          : hasVariant(globalVariants, "screen", "smallDesktop")
+          ? true
+          : false
+      ) ? (
+        <p.Stack
+          as={"div"}
+          hasGap={
+            hasVariant(globalVariants, "screen", "smallDesktop") ? true : false
+          }
+          className={classNames(defaultcss.all, sty.box___9HSqJ)}
+        >
+          {(
+            hasVariant(globalVariants, "screen", "smallDesktop") ? true : false
+          ) ? (
+            <CircleButton
+              className={classNames("__wab_instance", sty.circleButton__l02W)}
+              leftArrow={"leftArrow"}
+            />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "screen", "smallDesktop") ? true : false
+          ) ? (
+            <CircleButton
+              className={classNames("__wab_instance", sty.circleButton__x0Bvq)}
+              rightArrow={"rightArrow"}
+            />
+          ) : null}
+        </p.Stack>
+      ) : null}
     </div>
   );
 }

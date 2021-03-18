@@ -9,13 +9,17 @@
 // Plasmic Project: rRiHBMbiCNZ6Mp9qsJpkyN
 // Component: uS4ZVUpSFN1i
 import * as React from "react";
+import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Avatar from "../../Avatar"; // plasmic-import: ARSndW9bltv7/component
 import MenuItems from "../../MenuItems"; // plasmic-import: w82YywdoVWCd/component
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
@@ -28,12 +32,20 @@ export const PlasmicHeader__ArgProps = new Array();
 
 function PlasmicHeader__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
+
   return (
-    <div
+    <p.Stack
+      as={"div"}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
+      hasGap={
+        hasVariant(globalVariants, "screen", "smallDesktop") ? true : false
+      }
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
       <Avatar
@@ -50,20 +62,49 @@ function PlasmicHeader__RenderFunc(props) {
         }
       />
 
-      <MenuItems
-        data-plasmic-name={"menuItems"}
-        data-plasmic-override={overrides.menuItems}
-        className={classNames("__wab_instance", sty.menuItems)}
-      />
-    </div>
+      {(
+        hasVariant(globalVariants, "screen", "mobile")
+          ? false
+          : hasVariant(globalVariants, "screen", "smallDesktop")
+          ? false
+          : true
+      ) ? (
+        <MenuItems
+          data-plasmic-name={"menuItems"}
+          data-plasmic-override={overrides.menuItems}
+          className={classNames("__wab_instance", sty.menuItems)}
+        />
+      ) : null}
+      {(
+        hasVariant(globalVariants, "screen", "mobile")
+          ? false
+          : hasVariant(globalVariants, "screen", "smallDesktop")
+          ? true
+          : false
+      ) ? (
+        <a
+          data-plasmic-name={"link"}
+          data-plasmic-override={overrides.link}
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.link
+          )}
+          href={"tel:+79771054555"}
+        >
+          {"+7(977) 105 45-55"}
+        </a>
+      ) : null}
+    </p.Stack>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "avatar", "svg", "menuItems"],
+  root: ["root", "avatar", "svg", "menuItems", "link"],
   avatar: ["avatar", "svg"],
   svg: ["svg"],
-  menuItems: ["menuItems"]
+  menuItems: ["menuItems"],
+  link: ["link"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -98,6 +139,7 @@ export const PlasmicHeader = Object.assign(
     avatar: makeNodeComponent("avatar"),
     svg: makeNodeComponent("svg"),
     menuItems: makeNodeComponent("menuItems"),
+    link: makeNodeComponent("link"),
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
     internalArgProps: PlasmicHeader__ArgProps

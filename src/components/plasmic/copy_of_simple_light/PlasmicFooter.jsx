@@ -11,10 +11,13 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
@@ -31,6 +34,10 @@ export const PlasmicFooter__ArgProps = new Array();
 
 function PlasmicFooter__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -39,7 +46,11 @@ function PlasmicFooter__RenderFunc(props) {
       data-plasmic-for-node={forNode}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
-      <div className={classNames(defaultcss.all, sty.box___1UyZr)}>
+      <p.Stack
+        as={"div"}
+        hasGap={hasVariant(globalVariants, "screen", "mobile") ? true : false}
+        className={classNames(defaultcss.all, sty.box___1UyZr)}
+      >
         <div className={classNames(defaultcss.all, sty.box___70OG8)}>
           <p.Stack
             as={"div"}
@@ -114,60 +125,66 @@ function PlasmicFooter__RenderFunc(props) {
           </p.Stack>
         </div>
 
-        <div className={classNames(defaultcss.all, sty.box___9Hvce)}>
-          <a
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.link___2KbUt
-            )}
-            href={"/"}
-          >
-            {"Главная"}
-          </a>
+        {(hasVariant(globalVariants, "screen", "mobile") ? false : true) ? (
+          <div className={classNames(defaultcss.all, sty.box___9Hvce)}>
+            <a
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.link___2KbUt
+              )}
+              href={"/"}
+            >
+              {"Главная"}
+            </a>
 
-          <div
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.box__yhZDw
-            )}
-          >
-            {"Услуги и цены"}
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.box__yhZDw
+              )}
+            >
+              {"Услуги и цены"}
+            </div>
+
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.box__q5F0Y
+              )}
+            >
+              {"Специалисты"}
+            </div>
+
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.box___99PW
+              )}
+            >
+              {"F.A.Q."}
+            </div>
+
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.box__mi0Pt
+              )}
+            >
+              {"Контакты"}
+            </div>
           </div>
+        ) : null}
 
-          <div
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.box__q5F0Y
-            )}
-          >
-            {"Специалисты"}
-          </div>
-
-          <div
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.box___99PW
-            )}
-          >
-            {"F.A.Q."}
-          </div>
-
-          <div
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.box__mi0Pt
-            )}
-          >
-            {"Контакты"}
-          </div>
-        </div>
-
-        <div className={classNames(defaultcss.all, sty.box__ud0QM)}>
+        <p.Stack
+          as={"div"}
+          hasGap={hasVariant(globalVariants, "screen", "mobile") ? true : false}
+          className={classNames(defaultcss.all, sty.box__ud0QM)}
+        >
           <div
             className={classNames(
               defaultcss.all,
@@ -217,10 +234,14 @@ function PlasmicFooter__RenderFunc(props) {
           >
             {"от 1 февраля 2018 г."}
           </div>
-        </div>
-      </div>
+        </p.Stack>
+      </p.Stack>
 
-      <div className={classNames(defaultcss.all, sty.box__jd1Md)}>
+      <p.Stack
+        as={"div"}
+        hasGap={hasVariant(globalVariants, "screen", "mobile") ? true : false}
+        className={classNames(defaultcss.all, sty.box__jd1Md)}
+      >
         <a className={classNames(defaultcss.all, sty.link__mNPh)} href={"/"}>
           <img
             alt={""}
@@ -239,7 +260,7 @@ function PlasmicFooter__RenderFunc(props) {
         >
           {"Константа Дентал © 2020 Все права защищены"}
         </div>
-      </div>
+      </p.Stack>
     </div>
   );
 }

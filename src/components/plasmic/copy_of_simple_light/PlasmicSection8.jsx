@@ -11,11 +11,14 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import YandexMaps from "../../YandexMaps"; // plasmic-import: lV8cBegov1BaA/component
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
@@ -35,6 +38,10 @@ export const PlasmicSection8__ArgProps = new Array();
 
 function PlasmicSection8__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -43,7 +50,11 @@ function PlasmicSection8__RenderFunc(props) {
       data-plasmic-for-node={forNode}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
-      <div className={classNames(defaultcss.all, sty.box__iCfSe)}>
+      <p.Stack
+        as={"div"}
+        hasGap={hasVariant(globalVariants, "screen", "mobile") ? true : false}
+        className={classNames(defaultcss.all, sty.box__iCfSe)}
+      >
         <p.Stack
           as={"div"}
           hasGap={true}
@@ -75,7 +86,7 @@ function PlasmicSection8__RenderFunc(props) {
         >
           {"Мы всегда рады Вас видеть!"}
         </div>
-      </div>
+      </p.Stack>
 
       <YandexMaps
         data-plasmic-name={"yandexMaps"}
@@ -83,7 +94,11 @@ function PlasmicSection8__RenderFunc(props) {
         className={classNames("__wab_instance", sty.yandexMaps)}
       />
 
-      <div className={classNames(defaultcss.all, sty.box__jZucu)}>
+      <p.Stack
+        as={"div"}
+        hasGap={hasVariant(globalVariants, "screen", "mobile") ? true : false}
+        className={classNames(defaultcss.all, sty.box__jZucu)}
+      >
         <div className={classNames(defaultcss.all, sty.box___4DjZu)}>
           <div
             className={classNames(
@@ -114,7 +129,6 @@ function PlasmicSection8__RenderFunc(props) {
           <a
             className={classNames(defaultcss.all, sty.link__wb0CQ)}
             href={"https://wa.me/+79771054555"}
-            target={'_blank'}
           >
             <WhatsappIconsvgIcon
               className={classNames(defaultcss.all, sty.svg__u5IJd)}
@@ -125,7 +139,6 @@ function PlasmicSection8__RenderFunc(props) {
           <a
             className={classNames(defaultcss.all, sty.link___3CJoN)}
             href={"https://instagram.com/konstanta.dental?igshid=1y0nxsj3yut5n"}
-            target={'_blank'}
           >
             <_132PxInstagramLogo2016SvgIcon
               className={classNames(defaultcss.all, sty.svg__nZayM)}
@@ -136,7 +149,6 @@ function PlasmicSection8__RenderFunc(props) {
           <a
             className={classNames(defaultcss.all, sty.link___784Rw)}
             href={"https://www.facebook.com/konstantadental/"}
-            target={'_blank'}
           >
             <FacebookFIconsvgIcon
               className={classNames(defaultcss.all, sty.svg___7Tnnb)}
@@ -147,7 +159,6 @@ function PlasmicSection8__RenderFunc(props) {
           <a
             className={classNames(defaultcss.all, sty.link___6L8W)}
             href={" t.me/+79771054555"}
-            target={'_blank'}
           >
             <TelegramLogosvgIcon
               className={classNames(defaultcss.all, sty.svg___0Sbur)}
@@ -155,9 +166,13 @@ function PlasmicSection8__RenderFunc(props) {
             />
           </a>
         </p.Stack>
-      </div>
+      </p.Stack>
 
-      <div className={classNames(defaultcss.all, sty.box__lmdGv)}>
+      <p.Stack
+        as={"div"}
+        hasGap={hasVariant(globalVariants, "screen", "mobile") ? true : false}
+        className={classNames(defaultcss.all, sty.box__lmdGv)}
+      >
         <a
           className={classNames(defaultcss.all, sty.link__jTlw6)}
           href={"tel:+79771054555"}
@@ -185,7 +200,6 @@ function PlasmicSection8__RenderFunc(props) {
             href={
               "https://yandex.ru/maps/org/konstanta_dental/207987218439/?ll=37.300564%2C55.478607&z=17.78"
             }
-            target={'_blank'}
           >
             <img
               alt={""}
@@ -212,7 +226,6 @@ function PlasmicSection8__RenderFunc(props) {
             href={
               "https://www.google.ru/maps/place/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B0+%D0%94%D0%B5%D0%BD%D1%82%D0%B0%D0%BB/@55.478719,37.2966802,17z/data=!3m1!4b1!4m5!3m4!1s0x4135554e10754115:0x44ac441c13a462a!8m2!3d55.478716!4d37.2988689"
             }
-            target={'_blank'}
           >
             <img
               alt={""}
@@ -239,7 +252,6 @@ function PlasmicSection8__RenderFunc(props) {
             href={
               "https://2gis.ru/moscow/firm/70000001007009088?m=37.299858%2C55.4788%2F18.13"
             }
-            target={'_blank'}
           >
             <img
               alt={""}
@@ -259,7 +271,7 @@ function PlasmicSection8__RenderFunc(props) {
             </div>
           </p.Stack>
         </p.Stack>
-      </div>
+      </p.Stack>
     </div>
   );
 }

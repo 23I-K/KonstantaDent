@@ -14,8 +14,10 @@ import {
   hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
@@ -23,7 +25,7 @@ import * as sty from "./PlasmicSection3.module.css"; // plasmic-import: tf5M08sL
 import StarsFiledBlacksvgIcon from "./icons/PlasmicIcon__StarsFiledBlacksvg"; // plasmic-import: sdWujhztpnV5A/icon
 import Tooth4Greysvg2Icon from "./icons/PlasmicIcon__Tooth4Greysvg2"; // plasmic-import: YjsKtpKjYwdSo/icon
 import TeethBlacksvgIcon from "./icons/PlasmicIcon__TeethBlacksvg"; // plasmic-import: JyY3pwK5FCsV4/icon
-import equipment1PngJyMe45Dtw75J9 from "./images/equipment1Png.png"; // plasmic-import: jyME45dtw75J9/picture
+import equipmentpngR3TlfYzFc from "./images/equipmentpng.png"; // plasmic-import: R3TLFYzFc/picture
 
 export const PlasmicSection3__VariantProps = new Array(
   "reverseView",
@@ -38,6 +40,10 @@ export const PlasmicSection3__ArgProps = new Array(
 
 function PlasmicSection3__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -59,6 +65,8 @@ function PlasmicSection3__RenderFunc(props) {
           ? false
           : hasVariant(variants, "reverseView", "reverseView")
           ? false
+          : hasVariant(globalVariants, "screen", "smallDesktop")
+          ? true
           : true
       ) ? (
         <div
@@ -76,7 +84,24 @@ function PlasmicSection3__RenderFunc(props) {
             )
           })}
         >
-          <div className={classNames(defaultcss.all, sty.box__cwXtl)}>
+          <p.Stack
+            as={"div"}
+            hasGap={
+              hasVariant(globalVariants, "screen", "smallDesktop") ||
+              hasVariant(globalVariants, "screen", "mobile") ||
+              (hasVariant(variants, "simpleView", "simpleView") &&
+                hasVariant(globalVariants, "screen", "smallDesktop"))
+                ? true
+                : false
+            }
+            className={classNames(defaultcss.all, sty.box__cwXtl, {
+              [sty.box__simpleView__cwXtlkfrUm]: hasVariant(
+                variants,
+                "simpleView",
+                "simpleView"
+              )
+            })}
+          >
             <div
               className={classNames(
                 defaultcss.all,
@@ -84,14 +109,26 @@ function PlasmicSection3__RenderFunc(props) {
                 sty.box__aBc7M
               )}
             >
-                Только новейшее и <span style={{color: 'rgb(233, 184, 184)'}}>уникальное</span> оборудование
+              {hasVariant(globalVariants, "screen", "mobile")
+                ? "Только новейшее и уникальное\nоборудование"
+                : "Только новейшее и уникальное оборудование"}
             </div>
 
-            <StarsFiledBlacksvgIcon
-              className={classNames(defaultcss.all, sty.svg__iqLBa)}
-              role={"img"}
-            />
-          </div>
+            {(
+              hasVariant(globalVariants, "screen", "mobile")
+                ? true
+                : hasVariant(globalVariants, "screen", "smallDesktop")
+                ? true
+                : false
+            ) ? (
+              <div className={classNames(defaultcss.all, sty.box__mlohW)}>
+                <StarsFiledBlacksvgIcon
+                  className={classNames(defaultcss.all, sty.svg__iqLBa)}
+                  role={"img"}
+                />
+              </div>
+            ) : null}
+          </p.Stack>
 
           <div
             className={classNames(
@@ -105,6 +142,18 @@ function PlasmicSection3__RenderFunc(props) {
             }
           </div>
         </div>
+      ) : null}
+      {(hasVariant(variants, "reverseView", "reverseView") ? true : false) ? (
+        <Tooth4Greysvg2Icon
+          className={classNames(defaultcss.all, sty.svg__uqLfA, {
+            [sty.svg__reverseView__uqLfAiFbw]: hasVariant(
+              variants,
+              "reverseView",
+              "reverseView"
+            )
+          })}
+          role={"img"}
+        />
       ) : null}
 
       <p.Stack
@@ -132,7 +181,7 @@ function PlasmicSection3__RenderFunc(props) {
               alt={""}
               className={classNames(defaultcss.img, sty.img)}
               role={"img"}
-              src={equipment1PngJyMe45Dtw75J9}
+              src={equipmentpngR3TlfYzFc}
             />
           }
           value={args.techImage}
@@ -141,13 +190,22 @@ function PlasmicSection3__RenderFunc(props) {
         <p.Stack
           as={"div"}
           hasGap={
-            hasVariant(variants, "reverseView", "reverseView") ? true : false
+            hasVariant(globalVariants, "screen", "mobile") ||
+            hasVariant(variants, "reverseView", "reverseView")
+              ? true
+              : false
           }
           className={classNames(defaultcss.all, sty.box__cZjRw, {
             [sty.box__reverseView__cZjRwIFbw]: hasVariant(
               variants,
               "reverseView",
               "reverseView"
+            ),
+
+            [sty.box__simpleView__cZjRwkfrUm]: hasVariant(
+              variants,
+              "simpleView",
+              "simpleView"
             )
           })}
         >
@@ -159,6 +217,12 @@ function PlasmicSection3__RenderFunc(props) {
                 variants,
                 "reverseView",
                 "reverseView"
+              ),
+
+              [sty.slotMainTitle__simpleView]: hasVariant(
+                variants,
+                "simpleView",
+                "simpleView"
               )
             })}
           />
@@ -179,18 +243,6 @@ function PlasmicSection3__RenderFunc(props) {
         </p.Stack>
       </p.Stack>
 
-      {(hasVariant(variants, "reverseView", "reverseView") ? true : false) ? (
-        <Tooth4Greysvg2Icon
-          className={classNames(defaultcss.all, sty.svg__uqLfA, {
-            [sty.svg__reverseView__uqLfAiFbw]: hasVariant(
-              variants,
-              "reverseView",
-              "reverseView"
-            )
-          })}
-          role={"img"}
-        />
-      ) : null}
       {(hasVariant(variants, "simpleView", "simpleView") ? true : false) ? (
         <TeethBlacksvgIcon
           className={classNames(defaultcss.all, sty.svg___326Lt, {

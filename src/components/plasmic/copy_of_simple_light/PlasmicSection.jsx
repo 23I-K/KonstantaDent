@@ -11,26 +11,26 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
   useTrigger,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
 import * as sty from "./PlasmicSection.module.css"; // plasmic-import: cr8qTWYzmiKt/css
 import PlaceholdersvgIcon from "./icons/PlasmicIcon__Placeholdersvg"; // plasmic-import: efbLTS6Zlx6ef/icon
+import shiningBlackpngK2EelegbbUHdg from "./images/shiningBlackpng.png"; // plasmic-import: k2EelegbbUHdg/picture
 import doctorWritingpngLPqVlg3TLjeZk from "./images/doctorWritingpng.png"; // plasmic-import: lPQVlg3TLjeZk/picture
 import tooth4Greysvg2PJXvWkEr4Ml from "./images/tooth4Greysvg.svg"; // plasmic-import: 2pJXvWkEr4_ML/picture
 
 export const PlasmicSection__VariantProps = new Array();
 
-export const PlasmicSection__ArgProps = new Array(
-  "title",
-  "subtitleMain",
-  "subtitle"
-);
+export const PlasmicSection__ArgProps = new Array("title", "subtitleMain");
 
 function PlasmicSection__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
@@ -38,6 +38,10 @@ function PlasmicSection__RenderFunc(props) {
   const triggers = {
     hover_root: isRootHover
   };
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
 
   return (
     <p.Stack
@@ -50,7 +54,11 @@ function PlasmicSection__RenderFunc(props) {
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
       data-plasmic-trigger-props={[triggerRootHoverProps]}
     >
-      <div className={classNames(defaultcss.all, sty.box__m5GWm)}>
+      <p.Stack
+        as={"div"}
+        hasGap={true}
+        className={classNames(defaultcss.all, sty.box__m5GWm)}
+      >
         <p.PlasmicSlot
           defaultContents={
             "Trusted by over 20,000 companies all over the world"
@@ -62,15 +70,91 @@ function PlasmicSection__RenderFunc(props) {
         <p.PlasmicSlot
           defaultContents={"Enter some text"}
           value={args.subtitleMain}
+          className={classNames(sty.slotSubtitleMain)}
         />
 
-        <p.PlasmicSlot
-          defaultContents={"Enter some text"}
-          value={args.subtitle}
-        />
-      </div>
+        {(
+          hasVariant(globalVariants, "screen", "mobile")
+            ? true
+            : hasVariant(globalVariants, "screen", "smallDesktop")
+            ? true
+            : false
+        ) ? (
+          <p.Stack
+            as={"div"}
+            hasGap={
+              hasVariant(globalVariants, "screen", "smallDesktop")
+                ? true
+                : false
+            }
+            className={classNames(defaultcss.all, sty.box__doCWg)}
+          >
+            {(
+              hasVariant(globalVariants, "screen", "mobile")
+                ? true
+                : hasVariant(globalVariants, "screen", "smallDesktop")
+                ? true
+                : false
+            ) ? (
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__gKpHx
+                )}
+              >
+                {
+                  "Я приветствую Вас в моей клинике Константа Дентал. Кратко расскажу Вам о нас."
+                }
+              </div>
+            ) : null}
+            {(
+              hasVariant(globalVariants, "screen", "mobile")
+                ? false
+                : hasVariant(globalVariants, "screen", "smallDesktop")
+                ? true
+                : false
+            ) ? (
+              <img
+                alt={""}
+                className={classNames(defaultcss.img, sty.img__fUs38)}
+                role={"img"}
+                src={shiningBlackpngK2EelegbbUHdg}
+              />
+            ) : null}
+          </p.Stack>
+        ) : null}
+        {(
+          hasVariant(globalVariants, "screen", "mobile")
+            ? false
+            : hasVariant(globalVariants, "screen", "smallDesktop")
+            ? false
+            : true
+        ) ? (
+          <div
+            className={classNames(
+              defaultcss.all,
+              defaultcss.__wab_text,
+              sty.box__ljL3C
+            )}
+          >
+            {
+              "Я приветствую Вас в моей клинике Константа Дентал. Кратко расскажу Вам о нас."
+            }
+          </div>
+        ) : null}
+      </p.Stack>
 
-      <div className={classNames(defaultcss.all, sty.box__tat6M)}>
+      <p.Stack
+        as={"div"}
+        hasGap={
+          hasVariant(globalVariants, "screen", "smallDesktop") ||
+          hasVariant(globalVariants, "screen", "mobile")
+            ? true
+            : false
+        }
+        className={classNames(defaultcss.all, sty.box__tat6M)}
+      >
         <img
           alt={""}
           className={classNames(defaultcss.img, sty.img__iJk8)}
@@ -78,13 +162,26 @@ function PlasmicSection__RenderFunc(props) {
           src={doctorWritingpngLPqVlg3TLjeZk}
         />
 
-        <ul
+        <p.Stack
+          as={"ul"}
           data-plasmic-name={"ul"}
           data-plasmic-override={overrides.ul}
+          hasGap={
+            hasVariant(globalVariants, "screen", "smallDesktop") ||
+            hasVariant(globalVariants, "screen", "mobile")
+              ? true
+              : false
+          }
           className={classNames(defaultcss.ul, sty.ul)}
         >
           <li className={classNames(defaultcss.li, sty.li___1KZmm)}>
-            <div className={classNames(defaultcss.all, sty.box__tUHzZ)}>
+            <p.Stack
+              as={"div"}
+              hasGap={
+                hasVariant(globalVariants, "screen", "mobile") ? true : false
+              }
+              className={classNames(defaultcss.all, sty.box__tUHzZ)}
+            >
               <div
                 className={classNames(
                   defaultcss.all,
@@ -95,26 +192,32 @@ function PlasmicSection__RenderFunc(props) {
                 {"Мы - стоматологическая клиника"}
               </div>
 
-              <a
+              <p.Stack
+                as={"a"}
                 data-plasmic-name={"link"}
                 data-plasmic-override={overrides.link}
-                className={classNames(
-                  defaultcss.all,
-                  defaultcss.__wab_text,
-                  sty.link
-                )}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.link)}
                 href={"#contacts"}
               >
-                {triggers.hover_root ? " в Троицке" : " в Троицке"}
-              </a>
-            </div>
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.box__lnzaU
+                  )}
+                >
+                  {triggers.hover_root ? " в Троицке" : " в Троицке"}
+                </div>
 
-            <PlaceholdersvgIcon
-              data-plasmic-name={"svg"}
-              data-plasmic-override={overrides.svg}
-              className={classNames(defaultcss.all, sty.svg)}
-              role={"img"}
-            />
+                <PlaceholdersvgIcon
+                  data-plasmic-name={"svg"}
+                  data-plasmic-override={overrides.svg}
+                  className={classNames(defaultcss.all, sty.svg)}
+                  role={"img"}
+                />
+              </p.Stack>
+            </p.Stack>
           </li>
 
           <li
@@ -127,14 +230,16 @@ function PlasmicSection__RenderFunc(props) {
             {"Современное уникальное оборудование"}
           </li>
 
-          <li
-            className={classNames(
-              defaultcss.li,
-              defaultcss.__wab_text,
-              sty.li__uXr4K
-            )}
-          >
-            {"3 кабинета"}
+          <li className={classNames(defaultcss.li, sty.li__uXr4K)}>
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.box__b5Wa
+              )}
+            >
+              {"3 кабинета"}
+            </div>
           </li>
 
           <li
@@ -146,15 +251,15 @@ function PlasmicSection__RenderFunc(props) {
           >
             {"Работаем с 2004 года"}
           </li>
-        </ul>
-      </div>
 
-      <img
-        alt={""}
-        className={classNames(defaultcss.img, sty.img__rb2DM)}
-        role={"img"}
-        src={tooth4Greysvg2PJXvWkEr4Ml}
-      />
+          <img
+            alt={""}
+            className={classNames(defaultcss.img, sty.img__rb2DM)}
+            role={"img"}
+            src={tooth4Greysvg2PJXvWkEr4Ml}
+          />
+        </p.Stack>
+      </p.Stack>
     </p.Stack>
   );
 }
@@ -162,7 +267,7 @@ function PlasmicSection__RenderFunc(props) {
 const PlasmicDescendants = {
   root: ["root", "ul", "link", "svg"],
   ul: ["ul", "link", "svg"],
-  link: ["link"],
+  link: ["link", "svg"],
   svg: ["svg"]
 };
 

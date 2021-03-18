@@ -1231,6 +1231,19 @@
           "cssFilePath": "plasmic/copy_of_simple_light/PlasmicPinkButton.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Y6P8eBMoeV",
+          "name": "CircleButton",
+          "type": "managed",
+          "projectId": "rRiHBMbiCNZ6Mp9qsJpkyN",
+          "renderModuleFilePath": "plasmic/copy_of_simple_light/PlasmicCircleButton.jsx",
+          "importSpec": {
+            "modulePath": "CircleButton.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_simple_light/PlasmicCircleButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1645,6 +1658,21 @@
           "id": "gJ-GPUTBh",
           "name": "image",
           "filePath": "plasmic/copy_of_simple_light/images/image.png"
+        },
+        {
+          "id": "Od9Vbv1gu",
+          "name": "left-arrow.png",
+          "filePath": "plasmic/copy_of_simple_light/images/leftArrowpng.png"
+        },
+        {
+          "id": "hQlu9fGpJ",
+          "name": "right-arrow.png",
+          "filePath": "plasmic/copy_of_simple_light/images/rightArrowpng.png"
+        },
+        {
+          "id": "R3TLFYzFc",
+          "name": "equipment.png",
+          "filePath": "plasmic/copy_of_simple_light/images/equipmentpng.png"
         }
       ],
       "jsBundleThemes": []

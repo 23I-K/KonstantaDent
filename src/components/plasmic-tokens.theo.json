@@ -3041,6 +3041,16 @@
       }
     },
     {
+      "name": "TabDefaultPadding",
+      "type": "spacing",
+      "value": "30px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "rRiHBMbiCNZ6Mp9qsJpkyN",
+        "id": "O1KKzHAiw"
+      }
+    },
+    {
       "name": "UnnamedStyleToken",
       "type": "color",
       "value": "rgb(242,242,242)",
@@ -3118,6 +3128,26 @@
       "meta": {
         "projectId": "rRiHBMbiCNZ6Mp9qsJpkyN",
         "id": "gr5rkerK-icYe"
+      }
+    },
+    {
+      "name": "mobileDefaultIconSize",
+      "type": "spacing",
+      "value": "40px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "rRiHBMbiCNZ6Mp9qsJpkyN",
+        "id": "udC_Yv-ta"
+      }
+    },
+    {
+      "name": "mobileDefaultPadding",
+      "type": "spacing",
+      "value": "25px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "rRiHBMbiCNZ6Mp9qsJpkyN",
+        "id": "2PXKDxoxK"
       }
     },
     {

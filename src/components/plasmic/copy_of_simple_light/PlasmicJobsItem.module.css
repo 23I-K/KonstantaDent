@@ -17,6 +17,25 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-top: 30px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root > :global(.__wab_flex-container) {
+    flex-direction: row;
+    margin-top: calc(0px - 0px);
+    height: calc(100% + 0px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root > :global(.__wab_flex-container) > *,
+  .root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+    margin-top: 0px;
+  }
+}
 .box__jr4GW {
   display: flex;
   position: relative;
@@ -27,6 +46,13 @@
   width: 100%;
   min-width: 0;
   flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__jr4GW {
+    overflow: visible;
+    height: auto;
+    width: 30%;
+  }
 }
 .slotJobsItemImg {
   text-align: center;
@@ -50,6 +76,12 @@
   min-width: 0;
   flex-shrink: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__zXzoS {
+    width: 30%;
+    height: auto;
+  }
+}
 .slotJobsItemImg2 {
   text-align: center;
 }
@@ -61,6 +93,43 @@
   min-width: 0;
   min-height: 0;
 }
+.box__ypxs8 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: 1710px) {
+  .box__ypxs8 {
+    align-items: center;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__ypxs8 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__ypxs8 > :global(.__wab_flex-container) {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 5px);
+    height: calc(100% + 5px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__ypxs8 > :global(.__wab_flex-container) > *,
+  .box__ypxs8 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+}
 .box___3CMc7 {
   display: flex;
   position: relative;
@@ -69,9 +138,19 @@
   justify-content: flex-start;
   min-height: 90px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .box___3CMc7 {
+    min-height: 0px;
+  }
+}
 .slotMainTitle {
   font-size: 28px;
   font-weight: 700;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotMainTitle {
+    font-size: 14px;
+  }
 }
 .box__f0VXg {
   display: flex;
@@ -81,10 +160,22 @@
   align-self: center;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: calc(20px + 30px) !important;
+  margin-top: 20px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__f0VXg {
+    align-items: flex-start;
+    margin-top: calc(0px + 5px) !important;
+  }
 }
 .slotSubtitle {
   font-weight: 500;
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
   text-align: center;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotSubtitle {
+    font-size: 13px;
+    text-align: left;
+  }
 }

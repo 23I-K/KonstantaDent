@@ -11,11 +11,14 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
   useTrigger,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
@@ -39,6 +42,10 @@ function PlasmicJobsItem__RenderFunc(props) {
     hover_root: isRootHover,
     notHover_root: !isRootNotHover
   };
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
 
   return (
     <p.Stack
@@ -82,22 +89,35 @@ function PlasmicJobsItem__RenderFunc(props) {
           />
         </div>
       ) : null}
+      {(
+        hasVariant(globalVariants, "screen", "mobile")
+          ? true
+          : hasVariant(globalVariants, "screen", "smallDesktop")
+          ? true
+          : true
+      ) ? (
+        <p.Stack
+          as={"div"}
+          hasGap={hasVariant(globalVariants, "screen", "mobile") ? true : false}
+          className={classNames(defaultcss.all, sty.box__ypxs8)}
+        >
+          <div className={classNames(defaultcss.all, sty.box___3CMc7)}>
+            <p.PlasmicSlot
+              defaultContents={"Лечение зубов"}
+              value={args.mainTitle}
+              className={classNames(sty.slotMainTitle)}
+            />
+          </div>
 
-      <div className={classNames(defaultcss.all, sty.box___3CMc7)}>
-        <p.PlasmicSlot
-          defaultContents={"Лечение зубов"}
-          value={args.mainTitle}
-          className={classNames(sty.slotMainTitle)}
-        />
-      </div>
-
-      <div className={classNames(defaultcss.all, sty.box__f0VXg)}>
-        <p.PlasmicSlot
-          defaultContents={"лечение кариеса, каналов"}
-          value={args.subtitle}
-          className={classNames(sty.slotSubtitle)}
-        />
-      </div>
+          <div className={classNames(defaultcss.all, sty.box__f0VXg)}>
+            <p.PlasmicSlot
+              defaultContents={"лечение кариеса, каналов"}
+              value={args.subtitle}
+              className={classNames(sty.slotSubtitle)}
+            />
+          </div>
+        </p.Stack>
+      ) : null}
     </p.Stack>
   );
 }

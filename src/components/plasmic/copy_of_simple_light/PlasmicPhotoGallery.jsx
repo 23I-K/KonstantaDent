@@ -11,16 +11,20 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Slider1 from "../../Slider1"; // plasmic-import: 5L7SKHMUeIETo/component
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
 import * as sty from "./PlasmicPhotoGallery.module.css"; // plasmic-import: tDSVEoAw8RE-O/css
 import TeethBlacksvgIcon from "./icons/PlasmicIcon__TeethBlacksvg"; // plasmic-import: JyY3pwK5FCsV4/icon
+import gallery2Png4Ne42Kf9K0Hpl from "./images/gallery2Png.png"; // plasmic-import: 4ne42KF9k0Hpl/picture
 
 export const PlasmicPhotoGallery__VariantProps = new Array();
 
@@ -28,6 +32,10 @@ export const PlasmicPhotoGallery__ArgProps = new Array();
 
 function PlasmicPhotoGallery__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -73,16 +81,31 @@ function PlasmicPhotoGallery__RenderFunc(props) {
         </div>
       </div>
 
-      <Slider1 className={classNames("__wab_instance", sty.slider1__pd5Vx)} />
+      <Slider1
+        className={classNames("__wab_instance", sty.slider1__pd5Vx)}
+        photo1={
+          <img
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(defaultcss.img, sty.img)}
+            role={"img"}
+            src={gallery2Png4Ne42Kf9K0Hpl}
+          />
+        }
+      />
 
-      <Slider1 className={classNames("__wab_instance", sty.slider1__lQpbq)} />
+      {(hasVariant(globalVariants, "screen", "mobile") ? false : true) ? (
+        <Slider1 className={classNames("__wab_instance", sty.slider1__lQpbq)} />
+      ) : null}
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg"],
-  svg: ["svg"]
+  root: ["root", "svg", "img"],
+  svg: ["svg"],
+  img: ["img"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -115,6 +138,7 @@ export const PlasmicPhotoGallery = Object.assign(
   {
     // Helper components rendering sub-elements
     svg: makeNodeComponent("svg"),
+    img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicPhotoGallery
     internalVariantProps: PlasmicPhotoGallery__VariantProps,
     internalArgProps: PlasmicPhotoGallery__ArgProps

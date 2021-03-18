@@ -15,6 +15,16 @@
   border-radius: 75px;
   background: rgb(233, 184, 184);
 }
+@media (max-width: 1710px) {
+  .root {
+    height: 70px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    height: 60px;
+  }
+}
 .root:hover {
   opacity: 0.9;
   cursor: pointer;
@@ -28,4 +38,15 @@
   font-size: 40px;
   font-weight: 600;
   color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
+}
+@media (max-width: 1710px) {
+  .box {
+    font-size: 26px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box {
+    font-size: 23px;
+    text-align: center;
+  }
 }

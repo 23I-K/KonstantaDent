@@ -41,6 +41,12 @@
 .root__type_outlineRoundedWhite > :global(.__wab_flex-container) {
   justify-content: center;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root__type_outlineRoundedWhite {
+    min-width: 100px;
+    padding: 20px 180px;
+  }
+}
 .root__type_smallLinkStyle {
   min-width: 0px;
   max-width: 300px;

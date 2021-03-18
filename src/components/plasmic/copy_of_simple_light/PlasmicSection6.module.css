@@ -10,6 +10,17 @@
   padding: 150px /* plasmic-token: EidwINElf6Tyi */;
   background: url("./images/pinkBsckgroundpng.png") 0% 0% / cover;
 }
+@media (max-width: 1710px) {
+  .root {
+    padding: 70px 30px /* plasmic-token: O1KKzHAiw */ 30px
+      /* plasmic-token: O1KKzHAiw */;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    padding: 25px /* plasmic-token: 2PXKDxoxK */;
+  }
+}
 .box__gDtQ4 {
   display: flex;
   position: relative;
@@ -28,12 +39,45 @@
 .box__gDtQ4 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-left: 50px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__gDtQ4 {
+    width: 100%;
+    margin-top: 30px;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__gDtQ4 > :global(.__wab_flex-container) {
+    justify-content: space-between;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 0px);
+    height: calc(100% + 0px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__gDtQ4 > :global(.__wab_flex-container) > *,
+  .box__gDtQ4 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
 .box___8Ewlt {
   font-family: Inter;
   font-size: 64px;
   font-weight: 800;
   color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
   height: auto;
+}
+@media (max-width: 1710px) {
+  .box___8Ewlt {
+    font-size: 52px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box___8Ewlt {
+    font-size: 28px;
+  }
 }
 .svg {
   position: relative;
@@ -42,6 +86,13 @@
   height: 80px /* plasmic-token: GaU5YlFYltD8F */;
   color: rgb(255, 255, 255) /* plasmic-token: aejjUM4exF918 */;
   flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg {
+    width: 40px /* plasmic-token: udC_Yv-ta */;
+    height: 40px /* plasmic-token: udC_Yv-ta */;
+    flex-shrink: 0;
+  }
 }
 .box__hd3Zc {
   font-family: Inter;
@@ -54,9 +105,25 @@
   margin-bottom: 70px;
   text-align: center;
 }
+@media (max-width: 1710px) {
+  .box__hd3Zc {
+    font-size: 19px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__hd3Zc {
+    font-size: 20px;
+    text-align: left;
+  }
+}
 .linkButton2:global(.__wab_instance) {
   position: relative;
   margin-bottom: 50px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .linkButton2:global(.__wab_instance) {
+    margin: 0px 0px 25px;
+  }
 }
 .linkButton:global(.__wab_instance) {
   position: relative;

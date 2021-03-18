@@ -11,10 +11,13 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
@@ -28,6 +31,10 @@ export const PlasmicSection5__ArgProps = new Array();
 
 function PlasmicSection5__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -77,7 +84,13 @@ function PlasmicSection5__RenderFunc(props) {
             }
           </div>
 
-          <div className={classNames(defaultcss.all, sty.box__kxoyu)}>
+          <p.Stack
+            as={"div"}
+            hasGap={
+              hasVariant(globalVariants, "screen", "mobile") ? true : false
+            }
+            className={classNames(defaultcss.all, sty.box__kxoyu)}
+          >
             <img
               data-plasmic-name={"img"}
               data-plasmic-override={overrides.img}
@@ -98,7 +111,7 @@ function PlasmicSection5__RenderFunc(props) {
                 "Гуманенко Татьяна Владимировна, основательница «Константа Дентал» и врач-стоматолог"
               }
             </div>
-          </div>
+          </p.Stack>
         </p.Stack>
       </div>
     </div>

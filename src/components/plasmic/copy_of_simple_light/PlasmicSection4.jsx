@@ -11,12 +11,15 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import JobsItem from "../../JobsItem"; // plasmic-import: CDyDuvLezUsVf/component
 import PinkButton from "../../PinkButton"; // plasmic-import: 0e89kY6kMy/component
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
@@ -42,6 +45,10 @@ export const PlasmicSection4__ArgProps = new Array();
 
 function PlasmicSection4__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -123,7 +130,9 @@ function PlasmicSection4__RenderFunc(props) {
                 sty.box__bJbqv
               )}
             >
-              {"лечение кариеса, каналов"}
+              {hasVariant(globalVariants, "screen", "mobile")
+                ? "лечение кариеса,каналов"
+                : "лечение кариеса, каналов"}
             </div>
           }
         />
@@ -326,6 +335,11 @@ function PlasmicSection4__RenderFunc(props) {
         hasGap={true}
         className={classNames(defaultcss.all, sty.box__i8Sht)}
       >
+        <ToothMoneysvg2Icon
+          className={classNames(defaultcss.all, sty.svg__pvgFn)}
+          role={"img"}
+        />
+
         <div
           className={classNames(
             defaultcss.all,
@@ -340,11 +354,6 @@ function PlasmicSection4__RenderFunc(props) {
           data-plasmic-name={"pinkButton"}
           data-plasmic-override={overrides.pinkButton}
           className={classNames("__wab_instance", sty.pinkButton)}
-        />
-
-        <ToothMoneysvg2Icon
-          className={classNames(defaultcss.all, sty.svg__pvgFn)}
-          role={"img"}
         />
       </p.Stack>
     </div>
