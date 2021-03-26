@@ -19,9 +19,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
 import * as sty from "./PlasmicSlider1.module.css"; // plasmic-import: 5L7SKHMUeIETo/css
-import gallery2Png4Ne42Kf9K0Hpl from "./images/gallery2Png.png"; // plasmic-import: 4ne42KF9k0Hpl/picture
-import gallery1JpgDmxj5Ey0Gq5Gs from "./images/gallery1Jpg.jpeg"; // plasmic-import: DMXJ5Ey0gq5GS/picture
-import gallery3Jpg93Ag9EswV3Mg from "./images/gallery3Jpg.jpeg"; // plasmic-import: 93AG9eswV3_Mg/picture
+import gallery2Png4Ne42Kf9K0Hpl from "../../images/gallery2Png.png"; // plasmic-import: 4ne42KF9k0Hpl/picture
+import gallery1JpgDmxj5Ey0Gq5Gs from "../../images/gallery1Jpg.jpeg"; // plasmic-import: DMXJ5Ey0gq5GS/picture
+import gallery3Jpg93Ag9EswV3Mg from "../../images/gallery3Jpg.jpeg"; // plasmic-import: 93AG9eswV3_Mg/picture
 
 export const PlasmicSlider1__VariantProps = new Array();
 

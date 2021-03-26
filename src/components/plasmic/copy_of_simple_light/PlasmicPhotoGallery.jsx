@@ -17,14 +17,14 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Slider1 from "../../Slider1"; // plasmic-import: 5L7SKHMUeIETo/component
+import Slider1 from "../../Slider1/Slider1"; // plasmic-import: 5L7SKHMUeIETo/component
 import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ds0rkJllqclQf/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_copy_of_simple_light.module.css"; // plasmic-import: rRiHBMbiCNZ6Mp9qsJpkyN/projectcss
 import * as sty from "./PlasmicPhotoGallery.module.css"; // plasmic-import: tDSVEoAw8RE-O/css
 import TeethBlacksvgIcon from "./icons/PlasmicIcon__TeethBlacksvg"; // plasmic-import: JyY3pwK5FCsV4/icon
-import gallery2Png4Ne42Kf9K0Hpl from "./images/gallery2Png.png"; // plasmic-import: 4ne42KF9k0Hpl/picture
+import gallery2Png4Ne42Kf9K0Hpl from "../../images/gallery2Png.png"; // plasmic-import: 4ne42KF9k0Hpl/picture
 
 export const PlasmicPhotoGallery__VariantProps = new Array();
 
